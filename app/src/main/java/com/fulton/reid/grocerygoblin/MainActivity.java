@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import org.w3c.dom.Text;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,14 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
                 try{
                 if (lbsBool){
-                    double qty1 = Double.valueOf(unitTxtXXX1.getText().toString());
-                    double price1 = Double.valueOf(txtPrice1.getText().toString());
-                    double qty2 = Double.valueOf(unitTxtXXX2.getText().toString());
-                    double price2 = Double.valueOf(txtPrice2.getText().toString());
-                    double costperXXX1 = (price1/qty1);
-                    double costperXXX2 = (price2/qty2);
-                    costperXXX1 = round(costperXXX1,2);
-                    costperXXX2 = round(costperXXX2,2);
+
+
+                    double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
+                    double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
+
+
                     priceFinal1.setText(String.valueOf(costperXXX1));
                     priceFinal2.setText(String.valueOf(costperXXX2));
 
@@ -81,14 +81,8 @@ public class MainActivity extends AppCompatActivity {
 
                 else if (ozBool){
 
-                    double qty1 = Double.valueOf(unitTxtXXX1.getText().toString());
-                    double price1 = Double.valueOf(txtPrice1.getText().toString());
-                    double qty2 = Double.valueOf(unitTxtXXX2.getText().toString());
-                    double price2 = Double.valueOf(txtPrice2.getText().toString());
-                    double costperXXX1 = (price1/qty1);
-                    double costperXXX2 = (price2/qty2);
-                    costperXXX1 = round(costperXXX1,2);
-                    costperXXX2 = round(costperXXX2,2);
+                    double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
+                    double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
                     priceFinal1.setText(String.valueOf(costperXXX1));
                     priceFinal2.setText(String.valueOf(costperXXX2));
 
@@ -112,15 +106,9 @@ public class MainActivity extends AppCompatActivity {
                 else if (qtyBool){
 
 
+                    double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
+                    double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
 
-                    double qty1 = Double.valueOf(unitTxtXXX1.getText().toString());
-                    double price1 = Double.valueOf(txtPrice1.getText().toString());
-                    double qty2 = Double.valueOf(unitTxtXXX2.getText().toString());
-                    double price2 = Double.valueOf(txtPrice2.getText().toString());
-                    double costperXXX1 = (price1/qty1);
-                    double costperXXX2 = (price2/qty2);
-                    costperXXX1 = round(costperXXX1,2);
-                    costperXXX2 = round(costperXXX2,2);
                     priceFinal1.setText(String.valueOf(costperXXX1));
                     priceFinal2.setText(String.valueOf(costperXXX2));
 
@@ -144,19 +132,13 @@ public class MainActivity extends AppCompatActivity {
                 else
 
                 {
-
                     error.show();
-
-
                 }
-
             }
                 catch (Throwable e) {
                     e.printStackTrace();
                 }}
-
         });
-
 
         //set the variables whether it be lbs or oz or quantity.
         lbsBtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -224,4 +206,21 @@ public class MainActivity extends AppCompatActivity {
         long tmp = Math.round(value);
         return (double) tmp / factor;
     }
+
+    public static double calculateing(TextView v1, TextView v2)
+{
+    double qty1 = Double.valueOf(v1.getText().toString());
+    double price1 = Double.valueOf(v2.getText().toString());
+
+
+    return round((price1/qty1),2);
+
+
 }
+
+
+
+}
+
+
+
