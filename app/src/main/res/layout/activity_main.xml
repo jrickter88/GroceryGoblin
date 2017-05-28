@@ -26,8 +26,8 @@
         android:layout_height="45dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="17dp"
-        android:background="@color/Mint"
-
+        android:textColorHint="@color/sour"
+        android:textColor="@color/white"
         android:ems="10"
         android:hint="PRICE"
         android:inputType="numberDecimal"
@@ -42,8 +42,8 @@
         android:layout_height="45dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="23dp"
-        android:background="@color/Mint"
-
+        android:textColorHint="@color/sour"
+        android:textColor="@color/white"
         android:ems="10"
         android:hint="PRICE"
         android:inputType="numberDecimal"
@@ -57,9 +57,9 @@
         android:layout_width="64dp"
         android:layout_height="45dp"
         android:layout_marginLeft="16dp"
-
+        android:textColorHint="@color/sour"
         android:layout_marginTop="23dp"
-        android:background="@color/Mint"
+        android:textColor="@color/white"
         android:ems="10"
         android:hint="VALUE"
         android:inputType="numberDecimal"
@@ -73,9 +73,9 @@
         android:layout_width="64dp"
         android:layout_height="45dp"
         android:layout_marginLeft="16dp"
-
+        android:textColorHint="@color/sour"
         android:layout_marginTop="17dp"
-        android:background="@color/Mint"
+        android:textColor="@color/white"
         android:ems="10"
         android:hint="VALUE"
         android:inputType="numberDecimal"
@@ -92,6 +92,7 @@
         android:layout_marginTop="23dp"
         android:background="@color/Mint"
         android:text="ITEM 2"
+        android:textColor="@color/sour"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -105,7 +106,7 @@
         android:layout_height="45dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="142dp"
-
+        android:textColor="@color/sour"
         android:text="ITEM 1"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -178,6 +179,7 @@
         android:layout_marginLeft="8dp" />
 
     <TextView
+        android:textColor="@color/sour"
         android:id="@+id/textView7"
         android:layout_width="64dp"
         android:layout_height="45dp"
@@ -192,7 +194,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lbsButton" />
 
     <TextView
-
+        android:textColor="@color/sour"
         android:id="@+id/unitTxt1"
         android:layout_width="64dp"
         android:layout_height="45dp"

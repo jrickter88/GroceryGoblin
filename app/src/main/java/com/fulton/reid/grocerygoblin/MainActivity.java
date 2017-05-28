@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
                     ozBool = true;
                     lbsBtn.setChecked(false);
                     qtyBtn.setChecked(false);
-                    unittxt1.setText("Oz");
+                    unittxt1.setText("OZ");
 
 
 
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
                     ozBool = false;
                     ozBtn.setChecked(false);
                     lbsBtn.setChecked(false);
-                    unittxt1.setText("Qty");
+                    unittxt1.setText("QTY");
 
 
 

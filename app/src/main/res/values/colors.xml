@@ -19,9 +19,10 @@
     <color name="blue">#0000FF</color>
     <color name="navy">#000080</color>
     <color name="black">#000000</color>
-    <color name="sageGreen">#91B17C</color>
-    <color name="sour">#A4D88A</color>
-    <color name="Mint">#BEE3C9</color>
+    <color name="sageGreen">#505050</color>
+    <color name="sour">#bee3c9</color>
+    <color name="Mint">#505050</color>
+
 
 
 </resources>
