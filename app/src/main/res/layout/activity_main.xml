@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/sageGreen"
     tools:context="com.fulton.reid.grocerygoblin.MainActivity">
 
     <TextView
         android:id="@+id/Final2"
         android:layout_width="62dp"
         android:layout_height="28dp"
+
         android:layout_marginRight="8dp"
         android:layout_marginTop="42dp"
         android:textSize="24sp"
@@ -19,86 +21,100 @@
         android:layout_marginLeft="8dp" />
 
     <EditText
-
         android:id="@+id/Pricetxt1"
         android:layout_width="64dp"
         android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/Mint"
 
         android:ems="10"
-        android:hint="Price"
+        android:hint="PRICE"
         android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/qtyItem1"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="14dp"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
-
         android:id="@+id/priceTxt2"
         android:layout_width="64dp"
         android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/Mint"
 
         android:ems="10"
-        android:hint="Price"
+        android:hint="PRICE"
         android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/qtyItem2"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="23dp"
         app:layout_constraintTop_toBottomOf="@+id/Pricetxt1" />
 
     <EditText
-
         android:id="@+id/qtyItem2"
         android:layout_width="64dp"
         android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
 
-        android:layout_marginLeft="23dp"
         android:layout_marginTop="23dp"
+        android:background="@color/Mint"
         android:ems="10"
-        android:hint="Value"
+        android:hint="VALUE"
         android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/qtyItem1" />
 
     <EditText
-
         android:id="@+id/qtyItem1"
         android:layout_width="64dp"
         android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
 
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/Mint"
         android:ems="10"
-        android:hint="Value"
+        android:hint="VALUE"
         android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/unitTxt1" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="55dp"
-        android:layout_height="26dp"
-        android:text="Item 2"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:layout_marginTop="42dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
         android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginTop="23dp"
+        android:background="@color/Mint"
+        android:text="ITEM 2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
+        android:background="@color/Mint"
         android:id="@+id/textView2"
-        android:layout_width="55dp"
-        android:layout_height="26dp"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="142dp"
-        android:text="Item 1"
+
+        android:text="ITEM 1"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
+
         android:id="@+id/lbsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,6 +132,7 @@
         android:layout_marginLeft="8dp" />
 
     <ToggleButton
+
         android:id="@+id/qtyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -132,6 +149,8 @@
 
     <ToggleButton
         android:id="@+id/ozButton"
+
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -146,11 +165,12 @@
         app:layout_constraintVertical_bias="0.017" />
 
     <TextView
+
         android:id="@+id/Final1"
         android:layout_width="62dp"
         android:layout_height="28dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="150dp"
         android:textSize="24sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -159,28 +179,32 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="62dp"
-        android:layout_height="28dp"
-        android:text="Price"
-        android:textSize="24sp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintTop_toBottomOf="@+id/lbsButton"
-        app:layout_constraintRight_toLeftOf="@+id/calcButton"
-        android:layout_marginRight="26dp" />
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/Mint"
+        android:text="PRICE"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/unitTxt1"
+        app:layout_constraintTop_toBottomOf="@+id/lbsButton" />
 
     <TextView
+
         android:id="@+id/unitTxt1"
-        android:layout_width="62dp"
-        android:layout_height="28dp"
-        android:text="Unit"
-        android:textSize="24sp"
-        app:layout_constraintRight_toLeftOf="@+id/textView7"
-        android:layout_marginRight="36dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintTop_toBottomOf="@+id/ozButton"
-        android:layout_marginLeft="8dp"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/Mint"
+        android:text="UNIT"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/ozButton" />
 
     <Button
         android:id="@+id/calcButton"
@@ -191,5 +215,18 @@
         android:text="Calc"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="348dp"
+        android:layout_height="253dp"
+        app:srcCompat="@drawable/freiza"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 try{
                 if (lbsBool){
 
-
                     double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
                     double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
 
@@ -62,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if (costperXXX1 > costperXXX2)
                     {
+
                         priceFinal1.setTextColor(Color.rgb(255,0,0));
                         priceFinal2.setTextColor(Color.rgb(0,255,0));
 
