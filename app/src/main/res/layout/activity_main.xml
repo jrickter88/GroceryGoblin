@@ -52,13 +52,13 @@
         android:layout_width="64dp"
         android:layout_height="45dp"
 
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="23dp"
         android:ems="10"
         android:hint="Value"
-        android:inputType="number"
-        android:layout_marginTop="23dp"
-        app:layout_constraintTop_toBottomOf="@+id/qtyItem1"
+        android:inputType="numberDecimal"
         app:layout_constraintLeft_toRightOf="@+id/textView"
-        android:layout_marginLeft="23dp" />
+        app:layout_constraintTop_toBottomOf="@+id/qtyItem1" />
 
     <EditText
 
@@ -66,12 +66,12 @@
         android:layout_width="64dp"
         android:layout_height="45dp"
 
-        android:ems="10"
-        android:hint="Value"
-        android:inputType="number"
-        app:layout_constraintLeft_toRightOf="@+id/textView2"
         android:layout_marginLeft="23dp"
         android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Value"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/unitTxt1" />
 
     <TextView
