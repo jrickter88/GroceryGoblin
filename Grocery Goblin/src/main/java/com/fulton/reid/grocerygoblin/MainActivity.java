@@ -1,5 +1,6 @@
 package com.fulton.reid.grocerygoblin;
-
+//Created by Reid Fulton
+//Designed by Molly Martin
 import android.graphics.Color;
 import android.icu.text.DecimalFormat;
 import android.support.annotation.NonNull;

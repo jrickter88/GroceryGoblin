@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Made by Reid Fulton -->
+<!-- Designed by Molly Martin -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fulton.reid.grocerygoblin">
 

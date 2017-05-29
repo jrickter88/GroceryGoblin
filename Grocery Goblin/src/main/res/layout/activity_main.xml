@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Made by Reid Fulton -->
+<!-- Designed by Molly Martin -->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/sageGreen"
-    tools:context="com.fulton.reid.grocerygoblin.MainActivity">
+        tools:context="com.fulton.reid.grocerygoblin.MainActivity">
 
     <TextView
         android:id="@+id/Final2"
