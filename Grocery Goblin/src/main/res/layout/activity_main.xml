@@ -224,7 +224,7 @@
         android:id="@+id/imageView"
         android:layout_width="348dp"
         android:layout_height="253dp"
-    app:srcCompat="@drawable/freiza"
+      app:srcCompat="@drawable/grocerygoblin"
       android:layout_marginLeft="18dp"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintBottom_toBottomOf="parent"
