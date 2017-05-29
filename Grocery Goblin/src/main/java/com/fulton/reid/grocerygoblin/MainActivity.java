@@ -57,28 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
                     double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
                     double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
-
-
-                    priceFinal1.setText(String.valueOf(costperXXX1));
-                    priceFinal2.setText(String.valueOf(costperXXX2));
-
-                    if (costperXXX1 > costperXXX2)
-                    {
-
-                        priceFinal1.setTextColor(Color.rgb(255,0,0));
-                        priceFinal2.setTextColor(Color.rgb(0,255,0));
-
-
-                    }
-                    else
-                    {
-
-                        priceFinal1.setTextColor(Color.rgb(0,255,0));
-                        priceFinal2.setTextColor(Color.rgb(255,0,0));
-
-
-                    }
-
+                    comparison(costperXXX1,costperXXX2, priceFinal1, priceFinal2);
 
                 }
 
@@ -86,24 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
                     double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
                     double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
-                    priceFinal1.setText(String.valueOf(costperXXX1));
-                    priceFinal2.setText(String.valueOf(costperXXX2));
-
-                    if (costperXXX1 > costperXXX2)
-                    {
-                        priceFinal1.setTextColor(Color.rgb(255,0,0));
-                        priceFinal2.setTextColor(Color.rgb(0,255,0));
-
-
-                    }
-                    else
-                    {
-
-                        priceFinal1.setTextColor(Color.rgb(0,255,0));
-                        priceFinal2.setTextColor(Color.rgb(255,0,0));
-
-
-                    }
+                    comparison(costperXXX1,costperXXX2, priceFinal1, priceFinal2);
                 }
 
                 else if (qtyBool){
@@ -111,25 +73,8 @@ public class MainActivity extends AppCompatActivity {
 
                     double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
                     double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
+                    comparison(costperXXX1,costperXXX2, priceFinal1, priceFinal2);
 
-                    priceFinal1.setText(String.valueOf(costperXXX1));
-                    priceFinal2.setText(String.valueOf(costperXXX2));
-
-                    if (costperXXX1 > costperXXX2)
-                    {
-                        priceFinal1.setTextColor(Color.rgb(255,0,0));
-                        priceFinal2.setTextColor(Color.rgb(0,255,0));
-
-
-                    }
-                    else
-                    {
-
-                        priceFinal1.setTextColor(Color.rgb(0,255,0));
-                        priceFinal2.setTextColor(Color.rgb(255,0,0));
-
-
-                    }
                 }
 
                 else
@@ -198,6 +143,31 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    private void comparison(double costperXXX1, double costperXXX2, TextView priceFinal1, TextView priceFinal2) {
+
+
+        priceFinal1.setText(String.valueOf(costperXXX1));
+        priceFinal2.setText(String.valueOf(costperXXX2));
+
+        if (costperXXX1 > costperXXX2)
+        {
+
+            priceFinal1.setTextColor(Color.rgb(255,0,0));
+            priceFinal2.setTextColor(Color.rgb(0,255,0));
+
+
+        }
+        else
+        {
+
+            priceFinal1.setTextColor(Color.rgb(0,255,0));
+            priceFinal2.setTextColor(Color.rgb(255,0,0));
+
+
+        }
 
     }
 
