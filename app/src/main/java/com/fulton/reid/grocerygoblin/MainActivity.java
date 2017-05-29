@@ -212,15 +212,8 @@ public class MainActivity extends AppCompatActivity {
     double qty1 = Double.valueOf(v1.getText().toString());
     double price1 = Double.valueOf(v2.getText().toString());
 
-
     return round((price1/qty1),2);
 
-
 }
-
-
-
 }
-
-
 
