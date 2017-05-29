@@ -2,6 +2,7 @@ package com.fulton.reid.grocerygoblin;
 
 import android.graphics.Color;
 import android.icu.text.DecimalFormat;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     boolean ozBool = false;
     boolean qtyBool = false;
 
+    @NonNull
     CharSequence text = "Did not select a Unit of Measure";
     int duration = Toast.LENGTH_SHORT;
 
@@ -207,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
         return (double) tmp / factor;
     }
 
-    public static double calculateing(TextView v1, TextView v2)
+    public static double calculateing(@NonNull TextView v1, @NonNull TextView v2)
 {
     double qty1 = Double.valueOf(v1.getText().toString());
     double price1 = Double.valueOf(v2.getText().toString());
