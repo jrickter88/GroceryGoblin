@@ -2,19 +2,15 @@ package com.fulton.reid.grocerygoblin;
 //Created by Reid Fulton
 //Designed by Molly Martin
 import android.graphics.Color;
-import android.icu.text.DecimalFormat;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
-import org.w3c.dom.Text;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -57,24 +53,24 @@ public class MainActivity extends AppCompatActivity {
                 try{
                 if (lbsBool){
 
-                    double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
-                    double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
+                    double costperXXX1 = rMath.calculateing(unitTxtXXX1,txtPrice1);
+                    double costperXXX2 = rMath.calculateing(unitTxtXXX2,txtPrice2);
                     comparison(costperXXX1,costperXXX2, priceFinal1, priceFinal2);
 
                 }
 
                 else if (ozBool){
 
-                    double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
-                    double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
+                    double costperXXX1 = rMath.calculateing(unitTxtXXX1,txtPrice1);
+                    double costperXXX2 = rMath.calculateing(unitTxtXXX2,txtPrice2);
                     comparison(costperXXX1,costperXXX2, priceFinal1, priceFinal2);
                 }
 
                 else if (qtyBool){
 
 
-                    double costperXXX1 = calculateing(unitTxtXXX1,txtPrice1);
-                    double costperXXX2 = calculateing(unitTxtXXX2,txtPrice2);
+                    double costperXXX1 = rMath.calculateing(unitTxtXXX1,txtPrice1);
+                    double costperXXX2 = rMath.calculateing(unitTxtXXX2,txtPrice2);
                     comparison(costperXXX1,costperXXX2, priceFinal1, priceFinal2);
 
                 }
@@ -145,6 +141,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        //clears all the txt boxes and sets them back to the hint text.
+
         clearbtn.setOnClickListener(new View.OnClickListener(){
 
 
@@ -156,10 +155,6 @@ public class MainActivity extends AppCompatActivity {
                 unitTxtXXX2.setText("");
                 priceFinal1.setText("");
                 priceFinal2.setText("");
-                
-
-
-
             }
         });
     }
@@ -189,22 +184,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public static double round(double value, int places) {
-        if (places < 0) throw new IllegalArgumentException();
 
-        long factor = (long) Math.pow(10, places);
-        value = value * factor;
-        long tmp = Math.round(value);
-        return (double) tmp / factor;
-    }
-
-    public static double calculateing(@NonNull TextView v1, @NonNull TextView v2)
-{
-    double qty1 = Double.valueOf(v1.getText().toString());
-    double price1 = Double.valueOf(v2.getText().toString());
-
-    return round((price1/qty1),2);
-
-}
 }
 
