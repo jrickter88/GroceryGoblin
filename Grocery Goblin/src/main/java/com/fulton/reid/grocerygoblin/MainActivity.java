@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         final ToggleButton ozBtn = (ToggleButton) findViewById(R.id.ozButton);
         final ToggleButton qtyBtn = (ToggleButton) findViewById(R.id.qtyButton);
         final Button calculate = (Button) findViewById(R.id.calcButton);
+        final Button clearbtn = (Button) findViewById(R.id.clearButton);
         final TextView unittxt1 = (TextView) findViewById(R.id.unitTxt1);
+
 
         final TextView txtPrice1 = (TextView) findViewById(R.id.Pricetxt1);
         final TextView txtPrice2 = (TextView) findViewById(R.id.priceTxt2);
@@ -143,7 +145,23 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        clearbtn.setOnClickListener(new View.OnClickListener(){
 
+
+            @Override
+            public void onClick(View v) {
+                txtPrice1.setText("");
+                txtPrice2.setText("");
+                unitTxtXXX1.setText("");
+                unitTxtXXX2.setText("");
+                priceFinal1.setText("");
+                priceFinal2.setText("");
+                
+
+
+
+            }
+        });
     }
 
     private void comparison(double costperXXX1, double costperXXX2, TextView priceFinal1, TextView priceFinal2) {
